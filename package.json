@@ -1,6 +1,10 @@
 {
   "name": "react-switch-case-module",
-  "version": "1.0.0",
+  "version": "1.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ady642/react-switch-case"
+  },
   "description": "a module to make conditional rendering easily",
   "scripts": {
     "build": "rollup -c",
@@ -40,8 +44,7 @@
     "jsdom-global": "^3.0.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts-ts": "^3.1.0",
-    "react-scripts": "^3.1.2",
+    "react-scripts": "^4.0.3",
     "react-test-renderer": "^16.14.0",
     "rollup": "^2.41.2",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -49,7 +52,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^26.5.3",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "yargs": "^16.2.0"
   },
   "resolutions": {
     "braces": "^2.3.1",
@@ -57,6 +61,7 @@
     "mem": "^4.0.0",
     "serialize-javascript": "^3.1.0",
     "yargs-parser": "15.0.1",
-    "webpack-dev-server": "3.1.11"
+    "webpack-dev-server": "3.1.11",
+    "immer": "^8.0.1"
   }
 }
