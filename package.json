@@ -1,21 +1,21 @@
 {
   "name": "react-switch-case-module",
-  "version": "1.1.1",
+  "version": "2.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/ady642/react-switch-case"
   },
   "description": "a module to make conditional rendering easily",
   "scripts": {
-    "build": "rollup -c",
-    "test": "jest"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "test": "vitest"
   },
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "keywords": [
     "react",
@@ -24,44 +24,28 @@
   "files": [
     "build"
   ],
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "jsdom"
-  },
   "author": "Adri HM",
   "license": "ISC",
   "devDependencies": {
-    "@types/enzyme": "^3.10.8",
-    "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jest": "^26.0.20",
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.11",
-    "@types/react-test-renderer": "^16.9.5",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "jest": "^26.6.3",
-    "jest-environment-jsdom": "^26.6.2",
+    "@testing-library/react": "^13.4.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.0.1",
+    "jsdom": "^21.1.0",
     "jsdom-global": "^3.0.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "^4.0.3",
-    "react-test-renderer": "^16.14.0",
-    "rollup": "^2.41.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "rollup": "^3.12.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "ts-jest": "^26.5.3",
-    "typescript": "^4.2.3",
-    "yargs": "^16.2.0"
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.4",
+    "vitest": "^0.28.3",
+    "yargs": "^17.6.2"
   },
-  "resolutions": {
-    "braces": "^2.3.1",
-    "js-yaml": "^3.13.1",
-    "mem": "^4.0.0",
-    "serialize-javascript": "^3.1.0",
-    "yargs-parser": "15.0.1",
-    "webpack-dev-server": "3.1.11",
-    "immer": "^8.0.1"
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.0.0"
   }
 }
